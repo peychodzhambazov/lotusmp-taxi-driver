@@ -1,0 +1,11 @@
+{
+  "appId": "eu.lotusmp.taxidriver",
+  "appName": "Такси Шофьор",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#0B1B3F"
+  },
+  "plugins": {
+    "CapacitorHttp": { "enabled": true }
+  }
+}

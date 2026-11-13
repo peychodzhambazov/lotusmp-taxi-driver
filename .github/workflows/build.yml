@@ -1,0 +1,90 @@
+name: Изграждане на Android приложението
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HAS_KS: ${{ secrets.ANDROID_KEYSTORE_B64 != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: gradle
+
+      - name: Инсталиране
+        run: npm ci
+
+      - name: Синхронизиране на Capacitor
+        run: npx cap sync android
+
+      - name: Версия
+        id: ver
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="0.0.$GITHUB_RUN_NUMBER"; fi
+          IFS=. read -r a b c <<< "$V"
+          echo "name=$V" >> "$GITHUB_OUTPUT"
+          echo "code=$(( ${a:-0} * 10000 + ${b:-0} * 100 + ${c:-0} ))" >> "$GITHUB_OUTPUT"
+
+      - name: Ключ за подписване
+        if: env.HAS_KS == 'true'
+        run: echo "${{ secrets.ANDROID_KEYSTORE_B64 }}" | base64 -d > "$RUNNER_TEMP/release.keystore"
+
+      - name: Изграждане (подписано)
+        if: env.HAS_KS == 'true'
+        working-directory: android
+        env:
+          APP_VERSION_NAME: ${{ steps.ver.outputs.name }}
+          APP_VERSION_CODE: ${{ steps.ver.outputs.code }}
+          KEYSTORE_FILE: ${{ runner.temp }}/release.keystore
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: chmod +x gradlew && ./gradlew assembleRelease --no-daemon --stacktrace
+
+      - name: Изграждане (тестово, без ключ)
+        if: env.HAS_KS != 'true'
+        working-directory: android
+        env:
+          APP_VERSION_NAME: ${{ steps.ver.outputs.name }}
+          APP_VERSION_CODE: ${{ steps.ver.outputs.code }}
+        run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon --stacktrace
+
+      - name: Събиране на APK
+        run: |
+          mkdir -p dist
+          f=$(ls android/app/build/outputs/apk/*/*.apk | grep -v unsigned | head -1)
+          cp "$f" "dist/LotusMP-Taxi-Shofior-${{ steps.ver.outputs.name }}.apk"
+          cp "$f" "dist/LotusMP-Taxi-Shofior.apk"
+          ls -la dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LotusMP-Taxi-Shofior-${{ steps.ver.outputs.name }}
+          path: dist/LotusMP-Taxi-Shofior-${{ steps.ver.outputs.name }}.apk
+
+      - name: Публикуване (Release)
+        if: startsWith(github.ref, 'refs/tags/v') && env.HAS_KS == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Такси Шофьор ${{ steps.ver.outputs.name }}
+          body_path: RELEASE_NOTES.md
+          files: |
+            dist/LotusMP-Taxi-Shofior.apk
+            dist/LotusMP-Taxi-Shofior-${{ steps.ver.outputs.name }}.apk

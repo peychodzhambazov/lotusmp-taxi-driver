@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Такси Шофьор</string>
+    <string name="title_activity_main">Такси Шофьор</string>
+    <string name="package_name">eu.lotusmp.taxidriver</string>
+    <string name="custom_url_scheme">eu.lotusmp.taxidriver</string>
+</resources>
