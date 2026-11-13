@@ -41,6 +41,6 @@ Android приложение за таксиметровите шофьори в
 - Родна услуга: `android/app/src/main/java/eu/lotusmp/taxidriver/TrackerService.java`; мост към интерфейса: `TrackerPlugin.java`.
 - Сървърът: WordPress на lotusmp.eu, REST `/wp-json/lmp/v1/taxi/` (`config`, `register`, `login`, `me`, `ping`, `offline`, `logout`).
 - Изграждане: GitHub Actions (`.github/workflows/build.yml`). Нов таг `vX.Y.Z` → подписан APK в Releases.
-- Тайни в GitHub (Settings → Secrets → Actions): `ANDROID_KEYSTORE_B64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`.
+- Тайни в GitHub (Settings → Secrets → Actions): `ANDROID_KEYSTORE_B64` и `ANDROID_KEYSTORE_PASSWORD` (alias на ключа: `lotusmp`).
 
 © LOTUS MP – We Make It Happen.
