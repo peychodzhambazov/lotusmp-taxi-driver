@@ -37,7 +37,8 @@ jobs:
       - name: Версия
         id: ver
         run: |
-          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then V="${GITHUB_REF#refs/tags/v}"; else V="0.0.$GITHUB_RUN_NUMBER"; fi
+          # Версията идва от package.json – вдигнете я там, за да излезе нова версия.
+          V=$(node -p "require('./package.json').version")
           IFS=. read -r a b c <<< "$V"
           echo "name=$V" >> "$GITHUB_OUTPUT"
           echo "code=$(( ${a:-0} * 10000 + ${b:-0} * 100 + ${c:-0} ))" >> "$GITHUB_OUTPUT"
@@ -80,9 +81,12 @@ jobs:
           path: dist/LotusMP-Taxi-Shofior-${{ steps.ver.outputs.name }}.apk
 
       - name: Публикуване (Release)
-        if: startsWith(github.ref, 'refs/tags/v') && env.HAS_KS == 'true'
+        if: env.HAS_KS == 'true' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v'))
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: v${{ steps.ver.outputs.name }}
+          target_commitish: ${{ github.sha }}
+          make_latest: true
           name: Такси Шофьор ${{ steps.ver.outputs.name }}
           body_path: RELEASE_NOTES.md
           files: |

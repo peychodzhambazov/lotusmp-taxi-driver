@@ -40,7 +40,7 @@ Android приложение за таксиметровите шофьори в
 - [Capacitor 8](https://capacitorjs.com) – интерфейс в `www/`, Android проект в `android/`.
 - Родна услуга: `android/app/src/main/java/eu/lotusmp/taxidriver/TrackerService.java`; мост към интерфейса: `TrackerPlugin.java`.
 - Сървърът: WordPress на lotusmp.eu, REST `/wp-json/lmp/v1/taxi/` (`config`, `register`, `login`, `me`, `ping`, `offline`, `logout`).
-- Изграждане: GitHub Actions (`.github/workflows/build.yml`). Нов таг `vX.Y.Z` → подписан APK в Releases.
+- Изграждане: GitHub Actions (`.github/workflows/build.yml`). Всяко качване в `main` изгражда подписан APK и го публикува в Releases под версията от `package.json` (за нова версия вдигнете `version` там).
 - Тайни в GitHub (Settings → Secrets → Actions): `ANDROID_KEYSTORE_B64` и `ANDROID_KEYSTORE_PASSWORD` (alias на ключа: `lotusmp`).
 
 © LOTUS MP – We Make It Happen.
