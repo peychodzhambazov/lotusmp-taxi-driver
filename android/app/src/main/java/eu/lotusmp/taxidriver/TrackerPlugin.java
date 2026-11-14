@@ -208,6 +208,19 @@ public class TrackerPlugin extends Plugin {
     }
 
     @PluginMethod
+    public void share(PluginCall call) {
+        try {
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(Intent.EXTRA_TEXT, call.getString("text", ""));
+            Intent ch = Intent.createChooser(i, null);
+            ch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            getContext().startActivity(ch);
+        } catch (Exception ignored) { }
+        call.resolve();
+    }
+
+    @PluginMethod
     public void appInfo(PluginCall call) {
         JSObject r = new JSObject();
         try {

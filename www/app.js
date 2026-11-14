@@ -20,7 +20,7 @@
     bg: {
       app: 'Такси Шофьор', city: 'Кърджали', loginT: 'Вход за шофьори', loginP: 'Покажете колата си на картата на Кърджали и получавайте обаждания от клиенти наблизо.', phone: 'Телефон', password: 'Парола', enter: 'Вход', newDriver: 'Нов шофьор? Регистрация', haveAcc: 'Имате профил? Вход',
       regT: 'Регистрация', regP: 'LOTUS MP проверява всеки шофьор, преди колата да се покаже на картата.', name: 'Име и фамилия', email: 'Имейл (по желание)', firm: 'Таксиметрова фирма', permit: '№ на разрешително / удостоверение', permitH: 'Издадено от общината за таксиметров превоз', car: 'Марка и модел', color: 'Цвят', plate: 'Рег. номер', callPhone: 'Телефон за клиентите (по желание)', callH: 'Ако клиентите трябва да звънят на диспечера – въведете неговия номер.', pass6: 'Поне 6 символа',
-      consent: 'Приемам условията. Колата и местоположението ми се виждат на картата само докато съм на смяна.', terms: 'Условия', register: 'Изпрати заявка', required: 'Попълнете задължителните полета и приемете условията.',
+      consent1: 'Приемам ', contract: 'Договора за абонамент', consent2: ' ({d} дни безплатно, после {p} € на месец) и ', terms: 'Условията', consent3: '. Колата и местоположението ми се виждат на картата само докато съм на смяна, включително при изключен екран.', promo: 'Първите {d} дни са безплатни. После {p} € на месец, без автоматично подновяване.', trialUntil: 'Безплатен период до', daysLeft: 'остават {n} дни', afterTrial: 'След безплатния период: {p} € на месец.', expSoon: 'Абонаментът изтича след {n} дни. За подновяване ({p} € на месец) се свържете с LOTUS MP.', shiftTime: 'На смяна от', share: 'Сподели картата с клиенти', shareT: 'Кажете на клиентите', shareP: 'Колкото повече хора ползват картата, толкова повече обаждания получавате.', shareMsg: 'Такси в Кърджали? Вижте най-близкото свободно такси на картата:', sysStopped: 'Смяната беше спряна от телефона. Натиснете „Започни смяна“ отново и проверете настройките за батерията.', register: 'Изпрати заявка', required: 'Попълнете задължителните полета и приемете условията.',
       pendT: 'Заявката е получена', pendP: 'LOTUS MP ще провери данните ви и ще одобри профила. След това ще видите бутона „Започни смяна“.', check: 'Провери отново', logout: 'Изход', support: 'Обадете се на LOTUS MP',
       subOk: 'Абонамент до', subNo: 'Абонаментът е изтекъл', subNoP: 'Колата ви не се показва на картата. За подновяване се свържете с LOTUS MP.',
       start: 'ЗАПОЧНИ СМЯНА', startS: 'натиснете, за да ви виждат клиентите', end: 'Край на смяната', free: 'Свободен', busy: 'Зает', freeBig: 'СВОБОДЕН', busyBig: 'ЗАЕТ', visible: 'клиентите ви виждат', gps: 'GPS точност', sent: 'Последен сигнал', ago: 'преди', sec: 'сек', min: 'мин', waitGps: 'чакам GPS…', live: 'на живо', notLive: 'няма сигнал',
@@ -33,7 +33,7 @@
     tr: {
       app: 'Taksi Şoför', city: 'Kırcaali', loginT: 'Şoför girişi', loginP: 'Aracınızı Kırcaali haritasında gösterin ve yakındaki müşterilerden arama alın.', phone: 'Telefon', password: 'Şifre', enter: 'Giriş', newDriver: 'Yeni şoför müsünüz? Kayıt olun', haveAcc: 'Hesabınız var mı? Giriş',
       regT: 'Kayıt', regP: 'LOTUS MP, aracı haritada göstermeden önce her şoförü kontrol eder.', name: 'Ad Soyad', email: 'E-posta (isteğe bağlı)', firm: 'Taksi firması', permit: 'Ruhsat / belge no', permitH: 'Belediyenin verdiği taksi izni', car: 'Marka ve model', color: 'Renk', plate: 'Plaka', callPhone: 'Müşteriler için telefon (isteğe bağlı)', callH: 'Müşteriler santrali arayacaksa onun numarasını girin.', pass6: 'En az 6 karakter',
-      consent: 'Koşulları kabul ediyorum. Aracım ve konumum yalnızca vardiyadayken haritada görünür.', terms: 'Koşullar', register: 'Başvuruyu gönder', required: 'Zorunlu alanları doldurun ve koşulları kabul edin.',
+      consent1: '', contract: 'Abonelik sözleşmesini', consent2: ' ({d} gün ücretsiz, sonra ayda {p} €) ve ', terms: 'Koşulları', consent3: ' kabul ediyorum. Aracım ve konumum yalnızca vardiyadayken, ekran kapalıyken de, haritada görünür.', promo: 'İlk {d} gün ücretsiz. Sonra ayda {p} €, otomatik yenileme yok.', trialUntil: 'Ücretsiz dönem bitişi', daysLeft: '{n} gün kaldı', afterTrial: 'Ücretsiz dönemden sonra: ayda {p} €.', expSoon: 'Abonelik {n} gün sonra bitiyor. Yenilemek için (ayda {p} €) LOTUS MP ile iletişime geçin.', shiftTime: 'Vardiya süresi', share: 'Haritayı müşterilerle paylaş', shareT: 'Müşterilere söyleyin', shareP: 'Haritayı ne kadar çok kişi kullanırsa o kadar çok arama alırsınız.', shareMsg: 'Kırcaali\'de taksi mi lazım? En yakın boş taksiyi haritada görün:', sysStopped: 'Vardiya telefon tarafından durduruldu. Tekrar «Vardiyayı başlat»a dokunun ve pil ayarlarını kontrol edin.', register: 'Başvuruyu gönder', required: 'Zorunlu alanları doldurun ve koşulları kabul edin.',
       pendT: 'Başvurunuz alındı', pendP: 'LOTUS MP bilgilerinizi kontrol edip profilinizi onaylayacak. Sonra "Vardiyayı başlat" düğmesini göreceksiniz.', check: 'Tekrar kontrol et', logout: 'Çıkış', support: 'LOTUS MP\'yi arayın',
       subOk: 'Abonelik bitişi', subNo: 'Abonelik sona erdi', subNoP: 'Aracınız haritada görünmüyor. Yenilemek için LOTUS MP ile iletişime geçin.',
       start: 'VARDİYAYI BAŞLAT', startS: 'müşterilerin sizi görmesi için dokunun', end: 'Vardiyayı bitir', free: 'Boş', busy: 'Dolu', freeBig: 'BOŞ', busyBig: 'DOLU', visible: 'müşteriler sizi görüyor', gps: 'GPS hassasiyeti', sent: 'Son sinyal', ago: '', sec: 'sn önce', min: 'dk önce', waitGps: 'GPS bekleniyor…', live: 'canlı', notLive: 'sinyal yok',
@@ -46,7 +46,7 @@
     en: {
       app: 'Taxi Driver', city: 'Kardzhali', loginT: 'Driver login', loginP: 'Show your car on the Kardzhali map and get calls from nearby customers.', phone: 'Phone', password: 'Password', enter: 'Log in', newDriver: 'New driver? Register', haveAcc: 'Have an account? Log in',
       regT: 'Registration', regP: 'LOTUS MP checks every driver before the car appears on the map.', name: 'Full name', email: 'Email (optional)', firm: 'Taxi company', permit: 'Permit / certificate no.', permitH: 'Issued by the municipality', car: 'Make and model', color: 'Colour', plate: 'Plate no.', callPhone: 'Phone for customers (optional)', callH: 'If customers should call the dispatcher, enter that number.', pass6: 'At least 6 characters',
-      consent: 'I accept the terms. My car and location are shown on the map only while I am on shift.', terms: 'Terms', register: 'Send request', required: 'Fill in the required fields and accept the terms.',
+      consent1: 'I accept the ', contract: 'Subscription contract', consent2: ' ({d} days free, then {p} € per month) and the ', terms: 'Terms', consent3: '. My car and location are shown on the map only while I am on shift, including with the screen off.', promo: 'The first {d} days are free. Then {p} € per month, no automatic renewal.', trialUntil: 'Free period until', daysLeft: '{n} days left', afterTrial: 'After the free period: {p} € per month.', expSoon: 'Your subscription ends in {n} days. To renew ({p} € per month) contact LOTUS MP.', shiftTime: 'On shift for', share: 'Share the map with customers', shareT: 'Tell your customers', shareP: 'The more people use the map, the more calls you get.', shareMsg: 'Need a taxi in Kardzhali? See the nearest free taxi on the map:', sysStopped: 'The shift was stopped by the phone. Tap Start shift again and check the battery settings.', register: 'Send request', required: 'Fill in the required fields and accept the terms.',
       pendT: 'Request received', pendP: 'LOTUS MP will check your details and approve your profile. Then you will see "Start shift".', check: 'Check again', logout: 'Log out', support: 'Call LOTUS MP',
       subOk: 'Subscription until', subNo: 'Subscription expired', subNoP: 'Your car is not shown on the map. Contact LOTUS MP to renew.',
       start: 'START SHIFT', startS: 'tap so customers can see you', end: 'End shift', free: 'Free', busy: 'Busy', freeBig: 'FREE', busyBig: 'BUSY', visible: 'customers can see you', gps: 'GPS accuracy', sent: 'Last signal', ago: '', sec: 's ago', min: 'min ago', waitGps: 'waiting for GPS…', live: 'live', notLive: 'no signal',
@@ -62,6 +62,9 @@
   var lang = ls('lmp_lang') || ((navigator.language || 'bg').slice(0, 2).toLowerCase() === 'tr' ? 'tr' : 'bg');
   if (!I18N[lang]) lang = 'bg';
   function t(k) { var d = I18N[lang]; return d && d[k] != null ? d[k] : (I18N.bg[k] != null ? I18N.bg[k] : k); }
+  function tf(k, o) { return t(k).replace(/\{(\w)\}/g, function (m, a) { return o[a] != null ? o[a] : m; }); }
+  function days() { return (config && config.pilot_days) || 60; }
+  function price() { return (profile && profile.price) || (config && config.price_month) || '2'; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function $(id) { return document.getElementById(id); }
 
@@ -89,7 +92,10 @@
     function next() {
       if (i >= list.length) return Promise.reject(new Error('noserver'));
       var b = list[i++];
-      return fetch(b + '/wp-json/lmp/v1/taxi/config?t=' + Date.now(), { method: 'GET', cache: 'no-store' })
+      var ctl = window.AbortController ? new AbortController() : null;
+      var tmo = setTimeout(function () { if (ctl) ctl.abort(); }, 7000);
+      return fetch(b + '/wp-json/lmp/v1/taxi/config?t=' + Date.now(), { method: 'GET', cache: 'no-store', signal: ctl ? ctl.signal : undefined })
+        .then(function (r) { clearTimeout(tmo); return r; })
         .then(function (r) { if (!r.ok) throw new Error('bad'); return r.json(); })
         .then(function (j) { if (!j || !j.ok) throw new Error('bad'); base = b; ls('lmp_base', b); config = j; return j; })
         .catch(next);
@@ -136,6 +142,7 @@
       h += updateBanner() + '<div class="card"><h1>' + esc(t('loginT')) + '</h1><p>' + esc(t('loginP')) + '</p>' + note() +
         '<form id="f-login">' + field('l-phone', t('phone'), 'tel', 'autocomplete="tel" inputmode="tel" placeholder="08…" required') + field('l-pass', t('password'), 'password', 'autocomplete="current-password" required') +
         '<button class="btn gold" type="submit">' + esc(t('enter')) + '</button></form>' +
+        '<div class="msg ok" style="margin:14px 0 0">' + esc(tf('promo', { d: days(), p: price() })) + '</div>' +
         '<p class="center" style="margin:12px 0 0"><button class="lnk" id="go-reg" type="button">' + esc(t('newDriver')) + '</button></p></div>';
     } else if (screen === 'register') {
       h += '<div class="card"><h1>' + esc(t('regT')) + '</h1><p>' + esc(t('regP')) + '</p>' + note() + '<form id="f-reg">' +
@@ -147,7 +154,7 @@
         '<div class="g2">' + field('r-car', t('car') + ' *', 'text', 'placeholder="Skoda Octavia"') + field('r-color', t('color'), 'text', '') + '</div>' +
         field('r-plate', t('plate') + ' *', 'text', 'placeholder="К 1234 АВ" style="text-transform:uppercase"') +
         field('r-cphone', t('callPhone'), 'tel', 'inputmode="tel"', t('callH')) +
-        '<label class="chk"><input id="r-consent" type="checkbox"><span>' + esc(t('consent')) + ' <a href="#" data-url="' + esc((config && config.terms) || '') + '">' + esc(t('terms')) + '</a></span></label>' +
+        '<label class="chk"><input id="r-consent" type="checkbox"><span>' + esc(t('consent1')) + '<a href="#" data-url="' + esc((config && config.contract) || (base + '/taxi-dogovor/')) + '">' + esc(t('contract')) + '</a>' + esc(tf('consent2', { d: days(), p: price() })) + '<a href="#" data-url="' + esc((config && config.terms) || (base + '/taxi-usloviya/')) + '">' + esc(t('terms')) + '</a>' + esc(t('consent3')) + '</span></label>' +
         '<button class="btn gold" type="submit">' + esc(t('register')) + '</button></form>' +
         '<p class="center" style="margin:12px 0 0"><button class="lnk" id="go-login" type="button">' + esc(t('haveAcc')) + '</button></p></div>';
     } else if (screen === 'pending') {
@@ -165,11 +172,22 @@
   function onShift() { return nstate && nstate.shift; }
   function status() { return (nstate && nstate.status) || 'free'; }
 
+  function subHtml(p) {
+    if (!p.active) return '<div class="sub no"><span>' + esc(t('subNo')) + '</span></div><p style="margin:12px 0 0">' + esc(t('subNoP')) + ' ' + esc(tf('afterTrial', { p: price() })) + '</p>' + supportBtn();
+    var left = Math.max(0, Math.ceil((p.paid_until - Date.now() / 1000) / 86400));
+    var h = '<div class="sub ok"><span>' + esc(p.trial ? t('trialUntil') : t('subOk')) + '</span><span>' + fmtDate(p.paid_until) + '</span></div>';
+    if (p.trial) {
+      var pct = Math.max(3, Math.min(100, Math.round(left / days() * 100)));
+      h += '<div class="bar"><i style="width:' + pct + '%"></i></div><div class="barl"><span>' + esc(tf('daysLeft', { n: left })) + '</span><span>' + esc(tf('afterTrial', { p: price() })) + '</span></div>';
+    }
+    if (left <= 7) h += '<div class="msg warn" style="margin:12px 0 0">' + esc(tf('expSoon', { n: left, p: price() })) + '</div>' + supportBtn();
+    return h;
+  }
+
   function mainHtml() {
     var p = profile, h = '';
     h += '<div class="card"><div class="who"><div class="av">' + SVG.car + '</div><div><b>' + esc(p.name) + '</b><span>' + esc(p.firm) + ' · ' + esc([p.car, p.color].filter(Boolean).join(' ')) + '</span><br><span class="plate">' + esc(p.plate) + '</span></div></div>' +
-      (p.active ? '<div class="sub ok"><span>' + esc(t('subOk')) + '</span><span>' + fmtDate(p.paid_until) + '</span></div>'
-                : '<div class="sub no"><span>' + esc(t('subNo')) + '</span></div><p style="margin:12px 0 0">' + esc(t('subNoP')) + '</p>' + supportBtn()) + '</div>';
+      subHtml(p) + '</div>';
     if (p.active) {
       h += '<div class="card shift">' + note() + '<div id="warn"></div>';
       if (!onShift()) {
@@ -178,12 +196,13 @@
         var b = status() === 'busy';
         h += '<div class="ring ' + (b ? 'b' : 'f') + '"><span class="in">' + SVG.car + '<b>' + esc(b ? t('busyBig') : t('freeBig')) + '</b><small id="livelbl"></small></span></div>' +
           '<div class="seg"><button id="s-free" class="sf' + (b ? '' : ' on') + '">' + esc(t('free')) + '</button><button id="s-busy" class="sb' + (b ? ' on' : '') + '">' + esc(t('busy')) + '</button></div>' +
-          '<div class="info"><div>' + esc(t('gps')) + '<b id="i-acc">—</b></div><div>' + esc(t('sent')) + '<b id="i-sent">—</b></div></div>' +
+          '<div class="info three"><div>' + esc(t('shiftTime')) + '<b id="i-time">—</b></div><div>' + esc(t('gps')) + '<b id="i-acc">—</b></div><div>' + esc(t('sent')) + '<b id="i-sent">—</b></div></div>' +
           '<button id="end" class="btn ghost">' + SVG.stop + esc(t('end')) + '</button>';
       }
       h += '</div>';
       h += '<div id="batt"></div>';
     }
+    if (p.active) h += '<div class="card"><h2>' + esc(t('shareT')) + '</h2><p>' + esc(t('shareP')) + '</p><button class="btn dark" id="share">' + esc(t('share')) + '</button></div>';
     h += '<div class="card"><h2>' + esc(t('stats')) + '</h2><div class="kpis"><div><b>' + (p.calls_today || 0) + '</b><span>' + esc(t('today')) + '</span></div><div><b>' + (p.calls_7d || 0) + '</b><span>' + esc(t('d7')) + '</span></div><div><b>' + (p.calls_30d || 0) + '</b><span>' + esc(t('d30')) + '</span></div></div></div>';
     return h;
   }
@@ -193,6 +212,8 @@
     if (screen !== 'main' || !nstate) return;
     var acc = $('i-acc'), sent = $('i-sent'), live = $('livelbl'), warn = $('warn'), batt = $('batt');
     var now = nstate.now || Date.now();
+    var tm = $('i-time');
+    if (tm) { var st0 = +ls('lmp_shift_start') || now; var mm = Math.max(0, Math.floor((now - st0) / 60000)); tm.textContent = Math.floor(mm / 60) + ':' + (mm % 60 < 10 ? '0' : '') + (mm % 60); }
     if (acc) acc.textContent = nstate.fix ? '±' + Math.round(nstate.acc) + ' m' : t('waitGps');
     if (sent) {
       if (!nstate.sent) sent.textContent = '—';
@@ -204,6 +225,7 @@
       var w = '', e = nstate.error;
       if (e === 'out_of_area') w = '<div class="msg warn">' + esc(t('outArea')) + '</div>';
       else if (e === 'net') w = '<div class="msg warn">' + esc(t('net')) + '</div>';
+      else if (e === 'permission' && !onShift()) w = '<div class="msg err">' + esc(t('sysStopped')) + '</div>';
       else if (onShift() && !nstate.location) w = '<div class="msg err"><b>' + esc(t('permT')) + '</b><br>' + esc(t('permP')) + '<button class="btn dark" id="w-set">' + esc(t('openSet')) + '</button></div>';
       if (warn.innerHTML !== w) { warn.innerHTML = w; var ws = $('w-set'); if (ws) ws.onclick = function () { Tracker && Tracker.openSettings(); }; }
     }
@@ -230,6 +252,7 @@
     on('logout', function () { if (confirm(t('confirmOut'))) logout(); });
     on('refresh', function () { refresh(); });
     on('start', startShift);
+    on('share', function () { var u = (config && config.client) || (base + '/taxi/'); if (Tracker && Tracker.share) Tracker.share({ text: t('shareMsg') + ' ' + u }); else if (navigator.share) navigator.share({ text: t('shareMsg') + ' ' + u }); });
     on('s-free', function () { setStatus('free'); });
     on('s-busy', function () { setStatus('busy'); });
     on('end', function () { if (confirm(t('confirmEnd'))) endShift(); });
@@ -246,7 +269,7 @@
       var v = function (id) { return ($(id).value || '').trim(); };
       if (!v('r-name') || !v('r-phone') || $('r-pass').value.length < 6 || !v('r-firm') || !v('r-car') || !v('r-plate') || !$('r-consent').checked) { msg = t('required'); msgType = 'err'; keepForm(); return; }
       var b = fr.querySelector('button[type=submit]'); b.disabled = true;
-      api('register', { name: v('r-name'), phone: v('r-phone'), password: $('r-pass').value, email: v('r-email'), firm: v('r-firm'), permit: v('r-permit'), car: v('r-car'), color: v('r-color'), plate: v('r-plate'), call_phone: v('r-cphone'), consent: 1 })
+      api('register', { contract: (config && config.contract_ver) || '', name: v('r-name'), phone: v('r-phone'), password: $('r-pass').value, email: v('r-email'), firm: v('r-firm'), permit: v('r-permit'), car: v('r-car'), color: v('r-color'), plate: v('r-plate'), call_phone: v('r-cphone'), consent: 1 })
         .then(gotAuth).catch(function (err) { b.disabled = false; msg = err.message; msgType = 'err'; keepForm(); });
     };
   }
@@ -293,7 +316,7 @@
       if (!r.ok) { msg = t('permT') + '. ' + t('permP'); msgType = 'err'; render(); Tracker.openSettings(); return; }
       if (r.notifications === false) toast(t('notif'));
       return Tracker.start({ api: base + '/wp-json/lmp/v1/taxi/', token: token, status: 'free', lang: lang }).then(function (s) {
-        nstate = s; msg = ''; render(); tickInfo();
+        nstate = s; msg = ''; ls('lmp_shift_start', String(Date.now())); render(); tickInfo();
         if (navigator.vibrate) navigator.vibrate(80);
         if (s.battery === false) setTimeout(function () { Tracker.requestBattery(); }, 600);
       });
@@ -305,6 +328,7 @@
   }
   function endShift(silent) {
     if (!Tracker) return;
+    ls('lmp_shift_start', null);
     Tracker.stop().then(function (s) { nstate = s; nstate.shift = false; if (!silent) { render(); tickInfo(); } });
   }
 
@@ -325,8 +349,8 @@
   function boot() {
     screen = 'loading'; render();
     if (PREVIEW) {
-      config = { ok: true, support_phone: '+359 888 000 000', app_version: '', app_url: '' };
-      profile = { name: 'Иван Петров', firm: 'Такси Родопи', car: 'Skoda Octavia', color: 'жълта', plate: 'К 1234 АВ', status: 'approved', active: true, paid_until: Date.now() / 1000 + 20 * 86400, calls_today: 4, calls_7d: 23, calls_30d: 91 };
+      config = { ok: true, support_phone: '+359 888 000 000', app_version: '', app_url: '', pilot_days: 60, price_month: '2' };
+      profile = { name: 'Иван Петров', firm: 'Такси Родопи', car: 'Skoda Octavia', color: 'жълта', plate: 'К 1234 АВ', status: 'approved', active: true, paid_until: Date.now() / 1000 + 20 * 86400, calls_today: 4, calls_7d: 23, calls_30d: 91, trial: true, price: '2' };
       token = 'x'; nstate = /shift/.test(location.search) ? { shift: true, running: true, status: /busy/.test(location.search) ? 'busy' : 'free', sent: Date.now() - 6000, now: Date.now(), fix: 1, acc: 6, battery: true, location: true, error: '' } : { shift: false, battery: false, location: true };
       screen = 'main'; render(); tickInfo(); return;
     }

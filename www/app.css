@@ -110,3 +110,10 @@ p { color: var(--muted); line-height: 1.5; margin: 0 0 12px; }
 .toast.on { transform: translate(-50%, 0); opacity: 1; }
 .ring .live { color: #fff; background: rgba(0, 0, 0, .22); padding: 4px 10px; border-radius: 999px; }
 .ring .live.off { color: #FDE68A; }
+
+.bar { height: 8px; border-radius: 8px; background: rgba(255, 255, 255, .1); margin-top: 12px; overflow: hidden; }
+.bar i { display: block; height: 100%; border-radius: 8px; background: linear-gradient(90deg, var(--gold), var(--gold2)); }
+.barl { display: flex; justify-content: space-between; gap: 10px; font-size: 12px; color: var(--muted); margin-top: 6px; }
+.info.three { grid-template-columns: 1fr 1fr 1fr; }
+.info.three div { padding: 10px 8px; font-size: 11px; }
+.info.three b { font-size: 15px; }
