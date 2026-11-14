@@ -3,7 +3,7 @@
   'use strict';
 
   // Сървърите се пробват по ред; работещият се запомня.
-  var BASES = ['https://lotusmp.eu', 'https://deeppink-wallaby-607425.hostingersite.com'];
+  var BASES = ['https://lotusmp.eu'];
   var CAP = window.Capacitor;
   var NATIVE = !!(CAP && CAP.isNativePlatform && CAP.isNativePlatform());
   var Tracker = NATIVE && CAP.Plugins ? CAP.Plugins.Tracker : null;
@@ -68,7 +68,7 @@
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function $(id) { return document.getElementById(id); }
 
-  var base = ls('lmp_base') || '';
+  var base = 'https://lotusmp.eu'; ls('lmp_base', null);
   var token = ls('lmp_token');
   var config = null, profile = null, nstate = null, appVersion = '';
   var screen = 'loading', msg = '', msgType = 'err';
