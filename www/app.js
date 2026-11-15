@@ -18,7 +18,7 @@
 
   var I18N = {
     bg: {
-      app: 'Такси Шофьор', city: 'Кърджали', loginT: 'Вход за шофьори', loginP: 'Покажете колата си на картата на Кърджали и получавайте обаждания от клиенти наблизо.', phone: 'Телефон', password: 'Парола', enter: 'Вход', newDriver: 'Нов шофьор? Регистрация', haveAcc: 'Имате профил? Вход',
+      app: 'Такси Шофьор', city: 'Кърджали', loginT: 'Вход за шофьори', loginP: 'Покажете колата си на картата на Кърджали и получавайте обаждания от клиенти наблизо.', phone: 'Телефон', password: 'Парола', enter: 'Вход', newDriver: 'Нов шофьор? Регистрация', regBtn: 'Регистрирай се като шофьор', help: 'Помощ', haveAcc: 'Имате профил? Вход',
       regT: 'Регистрация', regP: 'LOTUS MP проверява всеки шофьор, преди колата да се покаже на картата.', name: 'Име и фамилия', email: 'Имейл (по желание)', firm: 'Таксиметрова фирма', permit: '№ на разрешително / удостоверение', permitH: 'Издадено от общината за таксиметров превоз', car: 'Марка и модел', color: 'Цвят', plate: 'Рег. номер', callPhone: 'Телефон за клиентите (по желание)', callH: 'Ако клиентите трябва да звънят на диспечера – въведете неговия номер.', pass6: 'Поне 6 символа',
       consent1: 'Приемам ', contract: 'Договора за абонамент', consent2: ' ({d} дни безплатно, после {p} € на месец) и ', terms: 'Условията', consent3: '. Колата и местоположението ми се виждат на картата само докато съм на смяна, включително при изключен екран.', promo: 'Първите {d} дни са безплатни. После {p} € на месец, без автоматично подновяване.', trialUntil: 'Безплатен период до', daysLeft: 'остават {n} дни', afterTrial: 'След безплатния период: {p} € на месец.', expSoon: 'Абонаментът изтича след {n} дни. За подновяване ({p} € на месец) се свържете с LOTUS MP.', shiftTime: 'На смяна от', share: 'Сподели картата с клиенти', shareT: 'Кажете на клиентите', shareP: 'Колкото повече хора ползват картата, толкова повече обаждания получавате.', shareMsg: 'Такси в Кърджали? Вижте най-близкото свободно такси на картата:', sysStopped: 'Смяната беше спряна от телефона. Натиснете „Започни смяна“ отново и проверете настройките за батерията.', register: 'Изпрати заявка', required: 'Попълнете задължителните полета и приемете условията.',
       pendT: 'Заявката е получена', pendP: 'LOTUS MP ще провери данните ви и ще одобри профила. След това ще видите бутона „Започни смяна“.', check: 'Провери отново', logout: 'Изход', support: 'Обадете се на LOTUS MP',
@@ -31,7 +31,7 @@
       update: 'Има нова версия', updateB: 'Изтегли', noServer: 'Няма връзка със сървъра. Проверете интернета.', retry: 'Опитай пак', resumed: 'Смяната продължава.', notif: 'Разрешете известията, за да виждате бутоните „Свободен / Зает / Край“ и при заключен екран.'
     },
     tr: {
-      app: 'Taksi Şoför', city: 'Kırcaali', loginT: 'Şoför girişi', loginP: 'Aracınızı Kırcaali haritasında gösterin ve yakındaki müşterilerden arama alın.', phone: 'Telefon', password: 'Şifre', enter: 'Giriş', newDriver: 'Yeni şoför müsünüz? Kayıt olun', haveAcc: 'Hesabınız var mı? Giriş',
+      app: 'Taksi Şoför', city: 'Kırcaali', loginT: 'Şoför girişi', loginP: 'Aracınızı Kırcaali haritasında gösterin ve yakındaki müşterilerden arama alın.', phone: 'Telefon', password: 'Şifre', enter: 'Giriş', newDriver: 'Yeni şoför müsünüz? Kayıt olun', regBtn: 'Şoför olarak kayıt ol', help: 'Yardım', haveAcc: 'Hesabınız var mı? Giriş',
       regT: 'Kayıt', regP: 'LOTUS MP, aracı haritada göstermeden önce her şoförü kontrol eder.', name: 'Ad Soyad', email: 'E-posta (isteğe bağlı)', firm: 'Taksi firması', permit: 'Ruhsat / belge no', permitH: 'Belediyenin verdiği taksi izni', car: 'Marka ve model', color: 'Renk', plate: 'Plaka', callPhone: 'Müşteriler için telefon (isteğe bağlı)', callH: 'Müşteriler santrali arayacaksa onun numarasını girin.', pass6: 'En az 6 karakter',
       consent1: '', contract: 'Abonelik sözleşmesini', consent2: ' ({d} gün ücretsiz, sonra ayda {p} €) ve ', terms: 'Koşulları', consent3: ' kabul ediyorum. Aracım ve konumum yalnızca vardiyadayken, ekran kapalıyken de, haritada görünür.', promo: 'İlk {d} gün ücretsiz. Sonra ayda {p} €, otomatik yenileme yok.', trialUntil: 'Ücretsiz dönem bitişi', daysLeft: '{n} gün kaldı', afterTrial: 'Ücretsiz dönemden sonra: ayda {p} €.', expSoon: 'Abonelik {n} gün sonra bitiyor. Yenilemek için (ayda {p} €) LOTUS MP ile iletişime geçin.', shiftTime: 'Vardiya süresi', share: 'Haritayı müşterilerle paylaş', shareT: 'Müşterilere söyleyin', shareP: 'Haritayı ne kadar çok kişi kullanırsa o kadar çok arama alırsınız.', shareMsg: 'Kırcaali\'de taksi mi lazım? En yakın boş taksiyi haritada görün:', sysStopped: 'Vardiya telefon tarafından durduruldu. Tekrar «Vardiyayı başlat»a dokunun ve pil ayarlarını kontrol edin.', register: 'Başvuruyu gönder', required: 'Zorunlu alanları doldurun ve koşulları kabul edin.',
       pendT: 'Başvurunuz alındı', pendP: 'LOTUS MP bilgilerinizi kontrol edip profilinizi onaylayacak. Sonra "Vardiyayı başlat" düğmesini göreceksiniz.', check: 'Tekrar kontrol et', logout: 'Çıkış', support: 'LOTUS MP\'yi arayın',
@@ -44,7 +44,7 @@
       update: 'Yeni sürüm var', updateB: 'İndir', noServer: 'Sunucuya bağlanılamıyor. İnterneti kontrol edin.', retry: 'Tekrar dene', resumed: 'Vardiya devam ediyor.', notif: 'Kilit ekranında "Boş / Dolu / Bitir" düğmelerini görmek için bildirimlere izin verin.'
     },
     en: {
-      app: 'Taxi Driver', city: 'Kardzhali', loginT: 'Driver login', loginP: 'Show your car on the Kardzhali map and get calls from nearby customers.', phone: 'Phone', password: 'Password', enter: 'Log in', newDriver: 'New driver? Register', haveAcc: 'Have an account? Log in',
+      app: 'Taxi Driver', city: 'Kardzhali', loginT: 'Driver login', loginP: 'Show your car on the Kardzhali map and get calls from nearby customers.', phone: 'Phone', password: 'Password', enter: 'Log in', newDriver: 'New driver? Register', regBtn: 'Register as a driver', help: 'Help', haveAcc: 'Have an account? Log in',
       regT: 'Registration', regP: 'LOTUS MP checks every driver before the car appears on the map.', name: 'Full name', email: 'Email (optional)', firm: 'Taxi company', permit: 'Permit / certificate no.', permitH: 'Issued by the municipality', car: 'Make and model', color: 'Colour', plate: 'Plate no.', callPhone: 'Phone for customers (optional)', callH: 'If customers should call the dispatcher, enter that number.', pass6: 'At least 6 characters',
       consent1: 'I accept the ', contract: 'Subscription contract', consent2: ' ({d} days free, then {p} € per month) and the ', terms: 'Terms', consent3: '. My car and location are shown on the map only while I am on shift, including with the screen off.', promo: 'The first {d} days are free. Then {p} € per month, no automatic renewal.', trialUntil: 'Free period until', daysLeft: '{n} days left', afterTrial: 'After the free period: {p} € per month.', expSoon: 'Your subscription ends in {n} days. To renew ({p} € per month) contact LOTUS MP.', shiftTime: 'On shift for', share: 'Share the map with customers', shareT: 'Tell your customers', shareP: 'The more people use the map, the more calls you get.', shareMsg: 'Need a taxi in Kardzhali? See the nearest free taxi on the map:', sysStopped: 'The shift was stopped by the phone. Tap Start shift again and check the battery settings.', register: 'Send request', required: 'Fill in the required fields and accept the terms.',
       pendT: 'Request received', pendP: 'LOTUS MP will check your details and approve your profile. Then you will see "Start shift".', check: 'Check again', logout: 'Log out', support: 'Call LOTUS MP',
@@ -128,6 +128,8 @@
   }
   function foot() {
     var h = '<div class="foot"><button data-url="' + esc((config && config.client) || (base + '/taxi/')) + '">' + esc(t('clients')) + '</button><button data-url="' + esc((config && config.terms) || (base + '/taxi-usloviya/')) + '">' + esc(t('terms')) + '</button>';
+    var sp = config && config.support_phone;
+    h += '<button data-url="' + esc(sp ? 'tel:' + sp.replace(/\s/g, '') : base + '/kontakti/') + '">' + esc(t('help')) + '</button>';
     if (token) h += '<button id="logout">' + esc(t('logout')) + '</button>';
     return h + '</div><div class="ver">LOTUS MP · v' + esc(appVersion || '1.0.0') + '</div>';
   }
@@ -140,14 +142,14 @@
       h += '<div class="card center"><h1>' + esc(t('app')) + '</h1><p>' + esc(t('noServer')) + '</p><button id="retry" class="btn gold">' + esc(t('retry')) + '</button></div>';
     } else if (screen === 'login') {
       h += updateBanner() + '<div class="card"><h1>' + esc(t('loginT')) + '</h1><p>' + esc(t('loginP')) + '</p>' + note() +
-        '<form id="f-login">' + field('l-phone', t('phone'), 'tel', 'autocomplete="tel" inputmode="tel" placeholder="08…" required') + field('l-pass', t('password'), 'password', 'autocomplete="current-password" required') +
+        '<form id="f-login">' + field('l-phone', t('phone'), 'tel', 'autocomplete="tel" inputmode="tel" placeholder="0888 123 456" required') + field('l-pass', t('password'), 'password', 'autocomplete="current-password" required') +
         '<button class="btn gold" type="submit">' + esc(t('enter')) + '</button></form>' +
         '<div class="msg ok" style="margin:14px 0 0">' + esc(tf('promo', { d: days(), p: price() })) + '</div>' +
-        '<p class="center" style="margin:12px 0 0"><button class="lnk" id="go-reg" type="button">' + esc(t('newDriver')) + '</button></p></div>';
+        '<p class="center" style="margin:16px 0 8px">' + esc(t('newDriver').split('?')[0] + '?') + '</p><button class="btn ghost" id="go-reg" type="button">' + esc(t('regBtn')) + '</button>' + supportBtn() + '</div>';
     } else if (screen === 'register') {
       h += '<div class="card"><h1>' + esc(t('regT')) + '</h1><p>' + esc(t('regP')) + '</p>' + note() + '<form id="f-reg">' +
         field('r-name', t('name') + ' *', 'text', 'autocomplete="name"') +
-        '<div class="g2">' + field('r-phone', t('phone') + ' *', 'tel', 'inputmode="tel" placeholder="08…"') + field('r-pass', t('password') + ' *', 'password', 'autocomplete="new-password"', t('pass6')) + '</div>' +
+        '<div class="g2">' + field('r-phone', t('phone') + ' *', 'tel', 'inputmode="tel" placeholder="0888 123 456"') + field('r-pass', t('password') + ' *', 'password', 'autocomplete="new-password"', t('pass6')) + '</div>' +
         field('r-email', t('email'), 'email', 'autocomplete="email"') +
         field('r-firm', t('firm') + ' *', 'text', '') +
         field('r-permit', t('permit'), 'text', '', t('permitH')) +
